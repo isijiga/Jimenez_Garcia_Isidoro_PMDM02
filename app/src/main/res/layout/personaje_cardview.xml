@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardViewTag"
+
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/constraint"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:background="#E60012"
+        android:padding="10dp"
+
+       >
+
+        <ImageView
+            android:id="@+id/fotoCardView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+
+            />
+
+        <TextView
+            android:id="@+id/textCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/catamaran_semibold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+
+            android:textSize="36dp" />
+        />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

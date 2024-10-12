@@ -5,8 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RecycledView_Main">
 
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycledView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:background="#ffdf02"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
