@@ -22,9 +22,9 @@
         android:id="@+id/imageViewfotoGrande"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewDescripcion"
+        app:layout_constraintTop_toBottomOf="@id/skillTextView"
         app:layout_constraintEnd_toEndOf="parent"
         >
 
@@ -32,36 +32,37 @@
 
     <TextView
         android:id="@+id/textViewDetails"
+        style="@style/textViewPrincipalStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="16dp"
-
-        />
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        style="@style/textViewskillStyle"
         android:id="@+id/skillTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewDetails"
-        app:layout_constraintBottom_toTopOf="@id/textViewDescripcion"
+        app:layout_constraintBottom_toTopOf="@id/imageViewfotoGrande"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         />
 
     <TextView
+        style="@style/textViewDetailsStyle"
         android:id="@+id/textViewDescripcion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@id/skillTextView"
+        app:layout_constraintTop_toBottomOf="@id/imageViewfotoGrande"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"

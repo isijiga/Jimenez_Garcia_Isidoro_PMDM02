@@ -5,11 +5,11 @@ import java.io.Serializable;
 public class Personaje implements Serializable {
 
     private String nombre;
-    private String descripcion;
+    private int descripcion;
     private int imagen;
-    private String habilidad;
+    private int habilidad;
 
-    public Personaje(int imagen, String descripcion, String nombre, String habilidad)  {
+    public Personaje(int imagen, int descripcion, String nombre, int habilidad)  {
         this.imagen = imagen;
         this.descripcion = descripcion;
         this.nombre = nombre;
@@ -20,7 +20,7 @@ public class Personaje implements Serializable {
         return nombre;
     }
 
-    public String getDescripcion() {
+    public int getDescripcion() {
         return descripcion;
     }
 
@@ -28,7 +28,7 @@ public class Personaje implements Serializable {
         return imagen;
     }
 
-    public String getHabilidad() {
+    public int getHabilidad() {
         return habilidad;
     }
 }

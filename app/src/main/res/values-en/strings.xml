@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="acercade">"About it"</string>
+    <string name="acercade_descripcion">"Application developed by \n Isidoro Jiménez Garcia\n (Version 1.0.)"</string>
+    <string name="mario_descripcion">"He is the protagonist of the Super Mario series. He is a brave and kind-hearted plumber, with his characteristic red cap and mustache. He is always ready to save the Mushroom Kingdom from the clutches of the evil Bowser. He is known for his bravery and agility. Although he is small in stature, his great spirit makes him an unwavering hero."</string>
+    <string name ="luigi_descripcion">"Luigi is Mario's younger brother, also a plucky plumber, although he is taller and thinner. He often lives in the shadow of his older brother, but has proven to be a hero in his own right. A bit more timid in nature, Luigi has a big heart and is always willing to help, even if he feels insecure or nervous. He is known for his green hat and his loyalty to Mario."</string>
+    <string name="peach_descripcion">"Princess Peach is the ruler of the Mushroom Kingdom and one of the most important figures in the Super Mario series. With her pink dress, golden crown and friendly personality, she is known for being elegant, brave and determined. Although she is often kidnapped by Bowser, she has also proven to be a strong and capable heroine."</string>
+    <string name="toad_descripcion">“Toad is one of the inhabitants of the Mushroom Kingdom and a loyal servant of Princess Peach. He is small, with a mushroom-shaped head in red and white, and wears a blue vest and shorts. Although he may appear weak because of his size, Toad is brave and always willing to help in Mario and Peach\'s adventures. His loyalty and energy make him a reliable ally.”</string>
+    <string name="bowser_descripcion">"Bowser, also known as King Koopa, is the main antagonist. He is a large, ferocious monster with turtle and dragon traits, characterized by his spiked carapace and fire breath. He often kidnaps Princess Peach in an attempt to conquer the Mushroom Kingdom. Although he is evil and powerful, he sometimes shows a more comical side in his interactions with Mario and his "</string>
+    <string name="yoshi_descripcion">"Yoshi is a friendly dinosaur and Mario's faithful ally. With his characteristic green color (although he can also be other colors), his long tongue and his ability to lay eggs, Yoshi is one of the most beloved characters in the series. He lives on Yoshi Island and has accompanied Mario on numerous adventures, serving as his mount and inseparable friend."</string>
+    <string name="daisy_descripcion">“Daisy is the princess of the Sarasaland Kingdom, and is known for her energetic, cheerful and competitive nature. She wears a yellow dress with orange details and a crown with green jewels. Daisy is distinguished by her more extroverted and sporty attitude. She is close friends with Peach and frequently appears in sports games, races and parties alongside the other characters in the Mario universe.”</string>
+    <string name="wario_descripcion">"Wario is a sturdy, greedy and somewhat grumpy character, known for being Mario's rival. He wears a yellow and purple cap and clothing, and has a large mustache that characterizes him. Although he is a selfish and often villainous character, he also stars in his own games, such as the WarioWare series. Unlike Mario, Wario is more motivated by the pursuit of wealth and power, which leads him to star in comical and outlandish situations."</string>
+    <string name="waluigi_descripcion">"Waluigi is Wario's sidekick and counterpart, being tall, thin and a bit clumsy. He is Luigi's direct rival and appears mainly in sports, racing and party games. He wears a purple outfit with a cap that has an upside-down “L” on it, and has a long pointed mustache. Waluigi is known for his sarcastic, grumpy and cheating attitude, often playing dirty to win, but also for his humorous and quirky moments."</string>
+    <string name="rosalina_descripcion">“Rosalina is the mysterious and elegant princess of the Mario universe, associated with stars and space. She first appeared in Super Mario Galaxy as a central figure who cares for the Lumas, small star creatures. She has long blonde hair and wears a beautiful light blue dress. Her personality is calm and wise, and she is seen as a protector of the heavens and galaxies.”</string>
+    <string name="bowser_jr_descripcion">"Bowser Jr. is the son of Bowser and one of the recurring antagonists in the Super Mario series. Looking like a little koopa, he wears a paint mask that he can use to disguise himself and a green shell with spikes. Although he often follows in his father's footsteps and participates in attempts to kidnap Princess Peach, he also shows a more playful and mischievous side, reflecting his youth and immaturity."</string>
+    <string name="boo_descripcion">“Boo is an iconic ghost from the Super Mario series, known for his round appearance, white color and mischievous expression. He has large eyes and a smiling mouth, and is characterized by his shyness; when looked at directly, he hides and becomes invisible. Boo is one of the recurring enemies in many Mario games, especially in horror games and haunted mansions.”</string>
+    <string name="donkey_kong_descripcion">“Donkey Kong is a giant gorilla and one of the most iconic characters in the Mario series. He originally appeared as the antagonist in the 1981 Donkey Kong game, where he kidnapped Mario\'s girlfriend Pauline. Over time, Donkey Kong has become a hero and protagonist in his own adventures. He has a strong personality and is often portrayed as a protector of the jungle and a defender of his home, Donkey Kong Island.”</string>
+    <string name="diddy_kong_descripcion">"Diddy Kong is Donkey Kong's friend and sidekick, known for his energy and adventurous spirit. He is a small ape with a red cap and a striped T-shirt, reflecting his playful personality. Diddy is known for being a brave and loyal character, always willing to help Donkey Kong in his adventures. He is often seen as a more agile and quicker character compared to Donkey Kong."</string>
+
+    <string name="mario_skill">"Super Jump"</string>
+    <string name="luigi_skill">"Super Long Jump"</string>
+    <string name="peach_skill">"Float in the air"</string>
+    <string name="toad_skill">"Speed"</string>
+    <string name="bowser_skill">"Breath of fire"</string>
+    <string name="yoshi_skill">"Extendable tongue"</string>
+    <string name="daisy_skill">“Speed and agility”</string>
+    <string name="wario_skill">"Strength"</string>
+    <string name="waluigi_skill">"Ability to cheat"</string>
+    <string name="rosalina_skill">"Manipulating the stars”</string>
+    <string name="bowser_jr_skill">“Magic Brush”</string>
+    <string name="boo_skill">"Invisibility"</string>
+    <string name="donkey_kong_skill">"Superhuman strength"</string>
+    <string name="diddy_kong_skill">"Agility and speed"</string>
+
+
+</resources>

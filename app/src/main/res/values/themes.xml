@@ -1,8 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.PMPM_Tarea2_IJG" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- para desactivar la actionbar por defecto -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">#E70112</item>
+        <item name="fontFamily">"@font/catamaran_medium.ttf"</item>
+        <item name="android:colorBackground">#ffdf02</item>
+        <item name="android:colorPrimary">#e70112</item>
+
+
     </style>
 
     <style name="Theme.PMPM_Tarea2_IJG" parent="Base.Theme.PMPM_Tarea2_IJG" />
