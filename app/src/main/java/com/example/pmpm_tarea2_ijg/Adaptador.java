@@ -60,7 +60,7 @@ public class Adaptador  extends RecyclerView.Adapter <Adaptador.MyViewHolder> {
             if (position != RecyclerView.NO_POSITION){
                 Context context = view.getContext();
                 Intent intent = new Intent(context, DetalleActivity.class);
-                Toast toast = Toast.makeText(context, "Detalles cargados para : " + listaPersonajes.get(position).getNombre(), Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(context, context.getString(R.string.toast)+ listaPersonajes.get(position).getNombre(), Toast.LENGTH_SHORT);
                 toast.show();
                 intent.putExtra("Personaje",listaPersonajes.get(position));
                 context.startActivity(intent);
