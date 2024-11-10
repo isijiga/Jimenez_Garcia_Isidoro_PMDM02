@@ -5,9 +5,11 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,34 +21,35 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.pmpm_tarea2_ijg.databinding.ActivityMainBinding;
+import com.google.android.material.navigation.NavigationView;
 
-import java.util.ArrayList;
-
-public class RecycledView_Main extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
     private boolean show=true;
+    private ActivityMainBinding binding;
+    private ActionBarDrawerToggle toggle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         SplashScreen splashscreen = SplashScreen.installSplashScreen(this);
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_recycled_view_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        binding= ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
 
         splashscreen.setKeepOnScreenCondition(() -> show);
         Handler handler = new Handler();
         handler.postDelayed(() -> show=false,3000);
 
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
+        toggle = new ActionBarDrawerToggle(this, binding.drawerlayout,binding.myToolbar ,R.string.open, R.string.close);
+        binding.drawerlayout.addDrawerListener(toggle);
+        setSupportActionBar(binding.myToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         /*para quitar el nombre de la app*/
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-
+        toggle.syncState();
         RecyclerView recyclerView = findViewById(R.id.recycledView);
 
         Adaptador adapter = new Adaptador(Datos.getDatos());
@@ -65,9 +68,17 @@ public class RecycledView_Main extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==R.id.info){
         AlertDialog acerca = new AlertDialog.Builder(this).create();
         acerca.setMessage(getResources().getString(R.string.acercade_descripcion));
         acerca.show();
-        return true ;
+        return true ;}
+        if(toggle.onOptionsItemSelected(item)){
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
+
+
 }

@@ -31,4 +31,8 @@
     <string name="boo_skill">"Invisibilidad"</string>
     <string name="donkey_kong_skill">"Fuerza sobrehumana"</string>
     <string name="diddy_kong_skill">"Agilidad y velocidad"</string>
+    <string name="home">Inicio</string>
+    <string name="config">Configuración</string>
+    <string name="open">Abrir</string>
+    <string name="close">Cerrar</string>
 </resources>
