@@ -15,6 +15,14 @@
       </SelectionState>
       <SelectionState runConfigName="RecycledView_Main">
         <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2024-11-10T09:49:34.993217500Z">
+          <Target type="DEFAULT_BOOT">
+            <handle>
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\isiji\.android\avd\IJimenez_Tarea1_API_35.avd" />
+            </handle>
+          </Target>
+        </DropdownSelection>
+        <DialogSelection />
       </SelectionState>
       <SelectionState runConfigName="DetalleActivity">
         <option name="selectionMode" value="DROPDOWN" />

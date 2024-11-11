@@ -8,13 +8,17 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
-public class Adaptador  extends RecyclerView.Adapter <Adaptador.MyViewHolder> {
+/**
+ *Clase responsable de cargar los datos en el recycledView.
+ * Esta coordinado con la clase  MyViewHolder que vincula los datos con la vista. Ambas clases tienen que estar
+ * trabajando en conjunto para que funcione el recycledView.
+ */
 
+public class Adaptador extends RecyclerView.Adapter<Adaptador.MyViewHolder> {
     private static List<Personaje> listaPersonajes;
 
     public Adaptador(List<Personaje> listaPersonajes) {
@@ -37,12 +41,14 @@ public class Adaptador  extends RecyclerView.Adapter <Adaptador.MyViewHolder> {
 
     }
 
-
     @Override
     public int getItemCount() {
         return listaPersonajes.size();
     }
 
+    /**
+     * 
+     */
     public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private ImageView foto;
         private TextView nombre;
@@ -57,12 +63,12 @@ public class Adaptador  extends RecyclerView.Adapter <Adaptador.MyViewHolder> {
         @Override
         public void onClick(View view) {
             int position = getPosition();
-            if (position != RecyclerView.NO_POSITION){
+            if (position != RecyclerView.NO_POSITION) {
                 Context context = view.getContext();
                 Intent intent = new Intent(context, DetalleActivity.class);
-                Toast toast = Toast.makeText(context, "Detalles cargados para : " + listaPersonajes.get(position).getNombre(), Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(context, context.getString(R.string.toast) + listaPersonajes.get(position).getNombre(), Toast.LENGTH_SHORT);
                 toast.show();
-                intent.putExtra("Personaje",listaPersonajes.get(position));
+                intent.putExtra("Personaje", listaPersonajes.get(position));
                 context.startActivity(intent);
 
             }
