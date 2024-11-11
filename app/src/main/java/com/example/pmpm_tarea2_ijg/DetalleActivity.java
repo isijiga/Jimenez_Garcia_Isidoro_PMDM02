@@ -5,46 +5,42 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toolbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-
+/**
+ * Clase tipo actividad que muestra los detalles de un personaje concreto cuando es
+ * pulsado en el recycledView
+ */
 public class DetalleActivity extends AppCompatActivity {
-    private TextView nombreTextView ;
-    private TextView    descripcionTextView ;
-    private TextView    skillTextView ;
-    private ImageView fotoGrande;
+/*gracias a las ultimas videoclases podria haber utilizado como buena practica el uso de databinding para simplificar el codigo
+* y el enlazar los datos con la vista*/
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        super.onCreate(savedInstanceState);
-
+        TextView nombreTextView;
+        TextView skillTextView;
+        ImageView fotoGrande;
+        TextView descripcionTextView;
         setContentView(R.layout.activity_detalle);
 
-
-
-        //enlazar vistas
+        /*enlazar vistas*/
         nombreTextView = findViewById(R.id.textViewDetails);
         descripcionTextView = findViewById(R.id.textViewDescripcion);
         fotoGrande = findViewById(R.id.imageViewfotoGrande);
         skillTextView = findViewById(R.id.skillTextView);
-        // Obtengo datos del Intent
+
+        /*recupero datos del Intent*/
         Intent intent = getIntent();
         Personaje personaje = (Personaje) intent.getSerializableExtra("Personaje");
 
-        // Establecer los datos en las vistas
+        /*vinculo los datos en las vistas*/
         if (personaje != null) {
             nombreTextView.setText(personaje.getNombre());
             descripcionTextView.setText(personaje.getDescripcion());
             fotoGrande.setImageResource(personaje.getImagen());
             skillTextView.setText(personaje.getHabilidad());
-
         }
-
+        super.onCreate(savedInstanceState);
     }
-
-
 }
