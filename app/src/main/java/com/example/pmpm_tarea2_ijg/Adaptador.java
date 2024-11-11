@@ -10,12 +10,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+
+
 import java.util.List;
 
 /**
- *Clase responsable de cargar los datos en el recycledView.
- * Esta coordinado con la clase  MyViewHolder que vincula los datos con la vista. Ambas clases tienen que estar
- * trabajando en conjunto para que funcione el recycledView.
+ * Clase responsable de cargar los datos en el recycledView.
+ * Esta coordinado con la clase  MyViewHolder que vincula los datos con la vista.
+ * Ambas clases tienen que estar trabajando en conjunto para que funcione el recycledView.
  */
 
 public class Adaptador extends RecyclerView.Adapter<Adaptador.MyViewHolder> {
@@ -47,12 +50,19 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.MyViewHolder> {
     }
 
     /**
-     * 
+     * Clase encargada de contener los datos de cada elemento del recycledView.
      */
     public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        private ImageView foto;
-        private TextView nombre;
 
+
+        private final ImageView  foto;
+        private final TextView  nombre;
+
+        /**
+         * Clase constructora de la clase MyViewHolder donde se referencia la vista del CardView
+         *
+         * @param itemView
+         */
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             foto = itemView.findViewById(R.id.fotoCardView);
@@ -70,10 +80,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.MyViewHolder> {
                 toast.show();
                 intent.putExtra("Personaje", listaPersonajes.get(position));
                 context.startActivity(intent);
-
             }
-
-
         }
     }
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+
     <style name="SplahTheme" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/rojo</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/supermario_logo</item>
