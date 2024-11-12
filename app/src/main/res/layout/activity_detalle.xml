@@ -5,11 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="personajeDB"
             type="com.example.pmpm_tarea2_ijg.Personaje" />
 
     </data>
+
 
     <ScrollView
         android:id="@+id/detalle"
@@ -17,15 +19,41 @@
         android:layout_height="match_parent"
         tools:context=".DetalleActivity">
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-
-
+        <LinearLayout
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarDetails"
+                style="@style/textViewDetailsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+
+            <TextView
+                android:id="@+id/textViewDetails"
+                style="@style/textViewPrincipalStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="@{personajeDB.nombre}" />
+
+            <TextView
+                android:id="@+id/skillTextView"
+                style="@style/textViewskillStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="@{personajeDB.habilidad}" />
 
             <ImageView
                 android:id="@+id/imageViewfotoGrande"
@@ -33,55 +61,23 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
                 app:imageResource="@{personajeDB.imagen}"
-                android:src="@drawable/info"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/skillTextView"
+
                 >
 
             </ImageView>
 
             <TextView
-                android:id="@+id/textViewDetails"
-                style="@style/textViewPrincipalStyle"
-                android:text="@{personajeDB.nombre}"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="2dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/skillTextView"
-                style="@style/textViewskillStyle"
-                android:text="@{personajeDB.habilidad}"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                app:layout_constraintBottom_toTopOf="@id/imageViewfotoGrande"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textViewDetails" />
-
-            <TextView
                 android:id="@+id/textViewDescripcion"
-                android:text="@{personajeDB.descripcion}"
                 style="@style/textViewDetailsStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-
-                android:layout_marginTop="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imageViewfotoGrande" />
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@{personajeDB.descripcion}" />
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
+        </LinearLayout>
     </ScrollView>
+
 </layout>

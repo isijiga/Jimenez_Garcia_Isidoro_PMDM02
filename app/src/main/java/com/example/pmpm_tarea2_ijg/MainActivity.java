@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(binding.myToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        /*para quitar el nombre de la app*/
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        /*quito el nombre de la app en la toolbar*/
+        getSupportActionBar().setTitle(R.string.personajes);
         toggle.syncState();
 
         /*carga de datos al adaptador*/

@@ -37,4 +37,5 @@
     <string name="close">Cerrar</string>
     <string name="toast">"Detalles cargados para : "</string>
     <string name="snackbar">Bienvenido al mundo de Mario</string>
+    <string name="personajes">Lista de personajes</string>
 </resources>
